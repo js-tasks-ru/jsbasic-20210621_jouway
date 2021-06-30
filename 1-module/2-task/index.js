@@ -13,7 +13,7 @@ function isValid(name) {
   if (!name) {
     return false;
   }
-  return name !== '' && name.indexOf(' ') === -1 && name.length >= 4;
+  return name !== '' && !name.includes(' ') && name.length >= 4;
 }
 
 function sayHello() {
